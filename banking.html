@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bank Account Deposite and Withdraw</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- main css  -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container pt-5">
+      <h2 class="text-center display-5 mb-3">Welcome to our <span class="text-primary fw-bold">BANK</span></h2>
+      <div class="row">
+        <div class="col-lg-8 mx-auto border p-4 shadow rounded">
+            <!-- balance statment  -->
+          <div class="row">
+            <div class="col">
+                <div class="bg-info text-white p-3 shadow rounded">
+                    <h4>Deposite</h4>
+                    <h1>$ <span id="deposite-total">00</span></h1>
+                </div>
+            </div>
+            <div class="col">
+                <div class="bg-warning text-white p-3 shadow rounded">
+                    <h4>Withdraw</h4>
+                    <h1>$ <span id="withdraw-total">00</span></h1>
+                </div>
+            </div>
+            <div class="col">
+                <div class="bg-secondary text-white p-3 shadow rounded">
+                    <h4>Balance</h4>
+                    <h1>$ <span id="balance-total">1000</span></h1>
+                </div>
+            </div>
+          </div>
+          <!-- deposite input and withdraw input  -->
+          <div class="row mt-5">
+            <div class="col-lg-6">
+                <div class="p-3 shadow border rounded">
+                    <h4 class="mb-3">Deposite Here</h4>
+                    <div>
+                        <input id="deposite-input" class="form-control mb-3" placeholder="Deposite here" type="text">
+                        <button id="deposite-button" class="btn btn-primary" type="submit">Deposite now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-3 shadow border rounded">
+                    <h4 class="mb-3">Withdraw Here</h4>
+                    <div>
+                        <input id="withdraw-input" class="form-control mb-3" placeholder="Deposite here" type="text">
+                        <button id="withdraw-button" class="btn btn-primary" type="submit">Withdraw now</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script src="banking.js"></script>
+  </body>
+</html>
