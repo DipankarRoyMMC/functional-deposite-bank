@@ -50,7 +50,7 @@ document.getElementById('deposite-button').addEventListener('click', function(){
 document.getElementById('withdraw-button').addEventListener('click', function(){
     const withdrawInput = getInputValue('withdraw-input');
     const currentBalance = getCurrentBalance();
-    if(withdrawInput > 0 && withdrawInput < currentBalance){
+    if(withdrawInput > 0 && withdrawInput <= currentBalance){
         updateTotalField('withdraw-total', withdrawInput);
         updateBalance(withdrawInput, false);
     } else{
